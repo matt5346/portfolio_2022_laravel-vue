@@ -51,45 +51,6 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
 import Icon from '~/js/components/Icon';
-// import Preloader from '@/components/preloader/Preloader';
-
-
-// const isLoading = false;
-
-onMounted(() => {
-  console.log('MOUNTED');
-});
-
-// export default {
-//   name: 'Home',
-//   data () {
-//     return {
-//       isLoading: false
-//     };
-//   },
-//   components: {
-//     Preloader
-//   },
-//     computed: {
-//         ...mapGetters('Globals', ['getLanguageUrl'])
-//     },
-//   mounted () {
-//     setTimeout(() => {
-//       this.loaderChange();
-//     }, 300);
-//   },
-//   updated () {
-//     setTimeout(() => {
-//       this.loaderChange();
-//     }, 300);
-//   },
-//   methods: {
-//     loaderChange () {
-//       this.isLoading = true;
-//     }
-//   }
-// };
 </script>
 
