@@ -1,0 +1,269 @@
+.modal {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 200;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: color(main-color2-30);
+    z-index: 10;
+    backdrop-filter: blur(3px);
+    transition: all .3s linear;
+    cursor: pointer;
+    &:before {
+        content: '';
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index:-1;
+        transition: all .2s linear;
+    }
+}
+
+.modal__inner {
+    position: relative;
+    z-index: 15;
+}
+
+.modal__form {
+    border-radius: 6px;
+    background-clip: padding-box;
+    background: color(main-color-50);
+    box-shadow: 0 0 13px 7px color(color3);
+    overflow: hidden;
+
+    @include sm {
+        max-width: 90vw;
+        width: rem-sm(640px);
+        padding: rem-sm(20px);
+        box-shadow: 0 0 7px 2px color(color3);
+    }
+    @include md {
+        width: rem-md(640px);
+        padding: rem-md(20px);
+    }
+    @include lg {
+        width: rem-lg(640px);
+        padding: rem-lg(20px);
+    }
+
+    h3 {
+        color: color(main-color2);
+        @include sm {
+            font-size: rem-sm(18px);
+            margin: 0 0 rem-sm(10px) 0;
+        }
+        @include md {
+            font-size: rem-md(18px);
+            margin: 0 0 rem-md(10px) 0;
+        }
+        @include lg {
+            font-size: rem-lg(18px);
+            margin: 0 0 rem-lg(10px) 0;
+        }
+    }
+}
+
+.modal__form__textarea {
+    width: 100%;
+    height: 110px;
+    border: 3px solid color(color3);
+    border-radius: 6px;
+    background-clip: padding-box;
+    display:block;
+    color: color(main-color);
+    resize: none;
+    overflow: hidden;
+    transition: all .15s ease-in-out;
+
+    @include sm {
+        font-size: rem-sm(18px);
+        margin-bottom: rem-sm(20px);
+        padding: rem-sm(12px) rem-sm(20px);
+    }
+    @include md {
+        font-size: rem-md(18px);
+        margin-bottom: rem-md(20px);
+        padding: rem-md(12px) rem-md(20px);
+    }
+    @include lg {
+        font-size: rem-lg(18px);
+        margin-bottom: rem-lg(20px);
+        padding: rem-lg(12px) rem-lg(20px);
+    }
+}
+
+.modal__form__input {
+    height: 48px;
+    width: 100%;
+    border: 3px solid color(color3);
+    border-radius: 6px;
+    background-clip: padding-box;
+    display: block;
+    color: color(main-color);
+    transition: all .15s ease-in-out;
+
+    [data-theme="dark"] & {
+        color: color(main-color2);
+    }
+
+    @include sm {
+        font-size: rem-sm(18px);
+        margin-bottom: rem-sm(25px);
+        padding: rem-sm(12px) rem-sm(20px);
+    }
+    @include md {
+        font-size: rem-md(18px);
+        margin-bottom: rem-md(25px);
+        padding: rem-md(12px) rem-md(20px);
+    }
+    @include lg {
+        font-size: rem-lg(18px);
+        margin-bottom: rem-lg(25px);
+        padding: rem-lg(12px) rem-lg(20px);
+    }
+}
+
+.modal__form__input:focus, .modal__form__textarea:focus {
+    box-shadow: 0 0 5px 3px color(color3);
+    overflow: hidden;
+}
+
+
+.modal__close {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    right: -50px;
+    top: 0;
+    cursor: pointer;
+    z-index: 100;
+    transition: all .2s linear;
+
+    .portfolio & {
+
+      @include sm {
+        right: 15px;
+        top: 15px;
+      }
+
+    }
+
+    @include sm {
+        right: -5px;
+        top: -50px;
+    }
+
+    &:hover {
+        .modal__close__tip {
+            opacity: 1;
+            transform: translateX(90px);
+
+            @include sm {
+                transform: translateX(-50px);
+            }
+        }
+
+        .modal__close__icon {
+            transform: rotate(-90deg);
+            stroke: color(main-color2);
+            background: red;
+        }
+
+    }
+}
+
+.modal__close__icon {
+    transition: transform .2s ease-in-out, background .2s ease-in-out;;
+    stroke: color(main-color2);
+    background: color(main-color);
+    stroke-width: 2px;
+    padding: 5px;
+    border-radius: 6px;
+    width: 30px;
+    height: 30px;
+}
+
+.modal__close__tip {
+    position: absolute;
+    color: red;
+    transform: translateX(120px);
+    opacity: 0;
+    right: 0;
+    transition: opacity .2s ease-in-out, transform .4s ease-in-out;
+
+    @include sm {
+        font-weight: 700;
+        font-size: rem-sm(16px);
+        transform: translateX(-80px);
+    }
+    @include md {
+        font-weight: 700;
+        font-size: rem-md(16px);
+    }
+    @include lg {
+        font-weight: 700;
+        font-size: rem-lg(16px);
+    }
+}
+
+.modal__socials {
+    position: relative;
+    background: color(main-color2);
+    border: 1px solid color(main-color-50);
+    border-left: none;
+    width: 60vw;
+    left: -20vw;
+    border-radius: 0 6px 6px 0;
+    padding: rem-sm(15px) rem-sm(10px);
+
+    .modal__socials__title {
+        font-family: 'Roboto mono';
+        font-size: rem-sm(22px);
+        margin-bottom: rem-sm(20px);
+    }
+}
+
+.footer__upper__socials-item {
+  display: flex;
+  align-items: center;
+  @include sm {
+    margin-bottom: rem-sm(20px);
+  }
+  @include md {
+    margin-bottom: rem-md(10px);
+  }
+  @include lg {
+    margin-bottom: rem-lg(20px);
+  }
+}
+
+.footer__upper__socials-item__img {
+  width: 40px;
+  transition: all .1s ease-in-out;
+  fill: color(main-color);
+  @include sm {
+    margin-right: rem-sm(10px);
+  }
+  @include md {
+    margin-right: rem-md(5px);
+  }
+  @include lg {
+    width: rem-lg(46px);
+    height: rem-lg(46px);
+    margin-right: rem-lg(10px);
+  }
+}

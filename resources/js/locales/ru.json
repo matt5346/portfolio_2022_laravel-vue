@@ -1,0 +1,54 @@
+{
+    "title": "Лорем блорем",
+    "btnCheck": "Посмотреть",
+    "website": "вебсайт",
+    "send": "Отправить",
+    "close": "Закрыть",
+    "click": "Открыть",
+    "reply": "Ответить",
+    "edit": "Редактировать",
+    "delete": "Удалить",
+    "currently": "На данный момент",
+    "unavailable": "недоступен",
+    "homePage": {
+        "greeting": "Привет!",
+        "name": "Меня зовут Матвей,",
+        "sphere": "и я Frontend web разработчик",
+        "posts": "Последние посты",
+        "checkPortfolio": "Посмотреть портфолио"
+    },
+    "header": {
+        "home": "Домой",
+        "portfolio": "Портфолио",
+        "posts": "Посты",
+        "admin": "Админ"
+    },
+    "footer": {
+        "socials": "Соц сети",
+        "telegram": "Telegram",
+        "github": "Github",
+        "instagram": "Instagram",
+        "contactF": "Контактная форма",
+        "contactMe": "Контакты",
+        "posts": "Посты",
+        "portfolio": "Портфолио",
+        "codewars": "codewars",
+        "home": "Домой",
+        "copyright": "2020 все права защищены"
+    },
+    "portfolio": {
+        "portfolio": "портфолио"
+    },
+    "posts": {
+        "post": "пост"
+    },
+    "form": {
+        "form": "форма",
+        "name": "Имя",
+        "nameHolder": "Ваше имя?",
+        "email": "Email",
+        "emailHolder": "Ваш email?",
+        "message": "Вопрос, предложение",
+        "messageHolder": "Ваш вопрос, предложение?"
+    }
+}

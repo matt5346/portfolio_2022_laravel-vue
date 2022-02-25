@@ -1,0 +1,54 @@
+{
+    "title": "Lorem Blorem",
+    "btnCheck": "Check",
+    "website": "website",
+    "send": "Send",
+    "close": "Close",
+    "click": "Click",
+    "reply": "Reply",
+    "edit": "Edit",
+    "delete": "Delete",
+    "unavailable": "unavailable",
+    "currently": "Currently",
+    "homePage": {
+        "greeting": "Hi!",
+        "name": "I'm Matthew,",
+        "sphere": "Frontend web developer",
+        "posts": "Latest Posts",
+        "checkPortfolio": "Check portfolio"
+    },
+    "header": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "posts": "Posts",
+        "admin": "Admin"
+    },
+    "footer": {
+        "socials": "Socials",
+        "telegram": "Telegram",
+        "github": "Github",
+        "instagram": "Instagram",
+        "contactF": "Contact form",
+        "contactMe": "Contact me",
+        "posts": "Posts",
+        "portfolio": "Portfolio",
+        "codewars": "codewars",
+        "home": "Home",
+        "copyright": "2020 All rights reserved"
+    },
+    "posts": {
+        "post": "post"
+    },
+    "portfolio": {
+        "portfolio": "portfolio"
+    },
+    "form": {
+        "form": "Form",
+        "name": "Your name",
+        "nameHolder": "What is your name?",
+        "email": "Your email",
+        "emailHolder": "What is your email?",
+        "message": "Your message or suggestion",
+        "messageHolder": "What is your message?"
+    }
+}
