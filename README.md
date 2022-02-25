@@ -8,3 +8,6 @@ php artisan migrate:fresh --seed
 
 php artisan serve
 npm run dev and npm run hot
+
+FRONT Vue 3 FOLDER:
+/resources/js
